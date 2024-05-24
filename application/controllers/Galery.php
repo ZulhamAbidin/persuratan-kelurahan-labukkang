@@ -60,8 +60,6 @@ class Galery extends CI_Controller
             'sub_title' => 'Struktur Kelurahan'
         ];
 
-        // $data['sm'] = $this->db->get('surat_masuk')->row_array();
-        // var_dump($data);
         $this->load->view('templates/header', $judul);
         $this->load->view('galery/s_kelurahan',$data);
         $this->load->view('templates/footer');

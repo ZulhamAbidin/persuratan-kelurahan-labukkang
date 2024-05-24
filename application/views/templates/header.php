@@ -231,7 +231,7 @@
 						</div>
 					</li>
 
-					<li class="<?php if ($title == 'Penduduk') : ?>
+					<!-- <li class="<?php if ($title == 'Penduduk') : ?>
                         <?= 'active'; ?>
 						<?php endif; ?>
 						">
@@ -239,7 +239,7 @@
 							<i class="material-icons lorem">assignment_ind</i>
 							<p><span class="lorem">Penduduk</span></p>
 						</a>
-					</li>
+					</li> -->
 
 					<?php if ($this->session->userdata('level') == 'administrator') : ?>
 

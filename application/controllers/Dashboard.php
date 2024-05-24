@@ -20,7 +20,6 @@ class Dashboard extends CI_Controller
             'sub_title' => ''
         ];
 
-        // $data['sm'] = $this->db->get('surat_masuk')->row_array();
         $januari = $this->db->query('SELECT * FROM surat_masuk WHERE month(tanggal_surat_masuk)="1"')->num_rows();
         $februari = $this->db->query('SELECT * FROM surat_masuk WHERE month(tanggal_surat_masuk)="2"')->num_rows();
         $maret = $this->db->query('SELECT * FROM surat_masuk WHERE month(tanggal_surat_masuk)="3"')->num_rows();
@@ -68,13 +67,6 @@ class Dashboard extends CI_Controller
 
         $data['keterangan'] = [$januari2, $februari2, $maret2, $april2, $mei2, $juni2, $juli2, $agustus2, $september2, $oktober2, $november2, $desember2];
 
-
-        // $data["smm"] = $this->db->get('surat_masuk');
-        // $data["skk"] = $this->db->get('surat_keluar');
-
-        // var_dump($data);
-
-
         $data2['sm'] = $this->db->query('SELECT tanggal_surat_masuk FROM surat_masuk ORDER BY tanggal_surat_masuk DESC LIMIT 1')->result_array();
 
         $data2['sk'] = $this->db->query('SELECT tanggal_surat_keluar FROM surat_keluar ORDER BY tanggal_surat_keluar DESC LIMIT 1')->result_array();
@@ -90,9 +82,6 @@ class Dashboard extends CI_Controller
         if($data2['sket'] == null){
             $data2['sket'] = 0;
         }
-
-        // var_dump($data2);
-        // die;
 
         $this->load->view('templates/header', $judul);
         $this->load->view('dashboard/index', $data2);

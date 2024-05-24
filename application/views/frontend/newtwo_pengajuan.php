@@ -19,14 +19,12 @@
     <link rel="stylesheet" href="https://simpel.jtik.ft.unm.ac.id/assets/stylesheets/theme-dark.min.css" data-skin="dark">
     <link rel="stylesheet" href="https://simpel.jtik.ft.unm.ac.id/assets/stylesheets/custom.css">
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
-	<!-- Google fonts-->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" <link
-		href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
-		type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
 	<link href="<?= base_url()?>assets/css/styles.css" rel="stylesheet" />
 	<link rel="stylesheet" href="<?= base_url();?>assets/jquery-ui-1.12.1/jquery-ui.css">
-    
+
     <style>
     .lorem {
         background-color: #2B5F9B !important;
@@ -35,7 +33,6 @@
 	}
 
 	.lorem-color {
-        /* background-color: #2B5F9B !important; */
         color: white !important;
 		border: #2B5F9B !important;?
 	}
@@ -65,8 +62,8 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav text-uppercase ml-auto">
-					<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#profil">Profil</a></li>
-					<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#struktur">Struktur Organisasi</a>
+					<li class="nav-item"><a class="nav-link js-scroll-trigger" href="<?= base_url('/')?>">Profil</a></li>
+					<li class="nav-item"><a class="nav-link js-scroll-trigger" href="<?= base_url('tracking')?>">Struktur Organisasi</a>
 					</li>
 					<li class="nav-item"><a class="nav-link" href="<?= base_url('suratonline/halaman_pengajuan')?>">Pengajuan Surat</a></li>
 					<li class="nav-item"><a class="nav-link" href="<?= base_url('tracking')?>">Track Surat</a></li>
@@ -89,9 +86,9 @@
                                         <br>
                                         <br>
                                         <div class="contact-wrapper form-style-two pt-115">
-                                            <?php if ($this->session->flashdata('success') == TRUE) : ?>
+                                            <!-- <?php if ($this->session->flashdata('success') == TRUE) : ?>
                                                 <?= $this->session->flashdata('success'); ?>
-                                            <?php endif; ?>
+                                            <?php endif; ?> -->
                                             <div class="text-center mb-3">
                                                 <h2 class="section-heading text-uppercase">Pengajuan Surat Online</h2>
                                                 <h3 class="section-subheading text-muted">Isi Form Pengajuan Surat Dibawah:</h3>
@@ -159,7 +156,7 @@
                                                     </div>
                                                 </small>
                                                 <hr>
-                                                <div class="row mt-2">
+                                                <div class="row mt-2 mb-5">
                                                     <div class="col-lg-4">
                                                         <button type="submit" class="btn btn-block btn-primary">KIRIM PERMOHONAN</button>
                                                     </div>
@@ -169,7 +166,7 @@
                                         </div> <!-- contact wrapper form -->
                                     </div>
                                 </div> <!-- row -->
-                                <div class="container">
+                                <!-- <div class="container">
                                     <?php if ($this->session->flashdata('message') == TRUE) : ?>
                                         <?= $this->session->flashdata('message'); ?>
                                     <?php endif; ?>
@@ -185,23 +182,19 @@
                                                     <div class="col-auto">
                                                         <i class="fas fa-search h4 text-body"></i>
                                                     </div>
-                                                    <!--end of col-->
                                                     <div class="col">
                                                         <input class="form-control form-control-lg form-control-borderless" type="search" name="trackid" placeholder="Masukkan ID Pengajuan Anda">
                                                     </div>
-                                                    <!--end of col-->
                                                     <div class="col-auto">
                                                         <button class="btn btn-lg btn-success" type="submit">Cari</button>
                                                     </div>
-                                                    <!--end of col-->
                                                 </div>
                                                 <?= form_close() ?>
                                             </div>
-                                            <!--end of col-->
                                         </div>
                                     </div>
-                                </div>
-                            </div> <!-- container -->
+                                </div> -->
+                            </div> 
                         </div>
                     </div>
                 </div>

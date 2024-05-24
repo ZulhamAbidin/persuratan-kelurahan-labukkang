@@ -1,5 +1,6 @@
-<section class="page-section">
+<section class="page-section mt-4">
 	<div class="container">
+		<br><br><br><br>
 		<?php if ($this->session->flashdata('message') == TRUE) : ?>
 		<?= $this->session->flashdata('message'); ?>
 		<?php endif; ?>
