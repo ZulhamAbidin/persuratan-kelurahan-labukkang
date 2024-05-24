@@ -145,13 +145,8 @@ class Suratonline extends CI_Controller
 
         $cc = $this->db->count_all('pengajuan_surat') + 1;
         $count = str_pad($cc, 3, STR_PAD_LEFT);
-        $id = $jenis_surat . "-";
-        $d = date('d');
-        $y = date('y');
-        $mnth = date("m");
-        $s = date('s');
-        $randomize = $d + $y + $mnth + $s;
-        $id = $id . $rid3 . $randomize . $count . $y;
+        
+        $id = $jenis_surat . "-" . $nik . "-" . date('Ymd');
 
         // var_dump($id);
         // die;
@@ -168,7 +163,7 @@ class Suratonline extends CI_Controller
             $file = $jenis_surat . uniqid() . $namafile;
             $config['upload_path']          = './uploads/berkas';
             $config['allowed_types']        = '*';
-            $config['max_size']             = 5120; // 5MB
+            $config['max_size']             = 115120; // 5MB
             $config['file_name']            = $file;
 
             $this->load->library('upload', $config);

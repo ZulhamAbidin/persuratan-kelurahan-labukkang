@@ -86,9 +86,9 @@
                                         <br>
                                         <br>
                                         <div class="contact-wrapper form-style-two pt-115">
-                                            <!-- <?php if ($this->session->flashdata('success') == TRUE) : ?>
+                                            <?php if ($this->session->flashdata('success') == TRUE) : ?>
                                                 <?= $this->session->flashdata('success'); ?>
-                                            <?php endif; ?> -->
+                                            <?php endif; ?>
                                             <div class="text-center mb-3">
                                                 <h2 class="section-heading text-uppercase">Pengajuan Surat Online</h2>
                                                 <h3 class="section-subheading text-muted">Isi Form Pengajuan Surat Dibawah:</h3>
@@ -212,7 +212,7 @@
                     } else {
                         $('.mhs').remove();
                     }
-                    $('.mhs').remove(); //Data masih JPTE
+                    $('.mhs').remove(); 
                     $(document).ready(function() {
 
                         var val = {

@@ -1,13 +1,16 @@
 <section class="page-section mt-4">
 	<div class="container">
 		<br><br><br><br>
+
 		<?php if ($this->session->flashdata('message') == TRUE) : ?>
 		<?= $this->session->flashdata('message'); ?>
 		<?php endif; ?>
+
 		<div class="text-center">
 			<h2 class="section-heading text-uppercase">Tracking Surat Online</h2>
 			<h3 class="section-subheading text-muted">Masukkan ID Surat untuk <b>Track</b>:</h3>
 		</div>
+
 		<div class="text-justify pl-5 pr-5">
 			<div class="row justify-content-center">
 				<div class="col-12 col-md-10 col-lg-8">
@@ -32,6 +35,29 @@
 				<!--end of col-->
 			</div>
 		</div>
+
+		<div class="container mt-5">
+    <h2 class="text-center mb-4">Cara Mencari Surat Berdasarkan Kriteria Yang Anda Ajukan</h2>
+    <h5 class="text-center mb-4">Contoh Format ID Surat: SPKK-7206023472934723-20240524 (JenisSurat-NIK-TahunBulanTanggal )</h5>
+    <h5 class="text-center mb-4">Berikut Ini Rangkuman Kriteria Surat:</h5>
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action">SPKK (Surat Pengantar Kartu Keluarga)</a>
+        <a href="#" class="list-group-item list-group-item-action">SPNA (Surat Pengantar Nikah)</a>
+        <a href="#" class="list-group-item list-group-item-action">SKKM (Surat Keterangan Kematian)</a>
+        <a href="#" class="list-group-item list-group-item-action">SKH (Surat Keterangan Harga)</a>
+        <a href="#" class="list-group-item list-group-item-action">SKD (Surat Keterangan Domisili)</a>
+        <a href="#" class="list-group-item list-group-item-action">SKBM (Surat Keterangan Belum Menikah)</a>
+        <a href="#" class="list-group-item list-group-item-action">SKPH (Surat Keterangan Pindah)</a>
+        <a href="#" class="list-group-item list-group-item-action">SKM (Surat Keterangan Menikah)</a>
+        <a href="#" class="list-group-item list-group-item-action">SKU (Surat Keterangan Usaha)</a>
+        <a href="#" class="list-group-item list-group-item-action">SKT (Surat Keterangan Tidak Mampu)</a>
+        <a href="#" class="list-group-item list-group-item-action">SKGG (Surat Keterangan Ganti Guna)</a>
+        <a href="#" class="list-group-item list-group-item-action">SITU (Surat Izin Tempat Usaha)</a>
+        <a href="#" class="list-group-item list-group-item-action">SIMB (Surat Izin Mendirikan Bangunan)</a>
+    </div>
+</div>
+
+
 	</div>
 </section>
 
